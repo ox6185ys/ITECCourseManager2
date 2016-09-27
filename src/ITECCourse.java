@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-/**
- * Created by ox6185ys on 3/18/2016.
- */
 public class ITECCourse {//Set private elements for ITECCourse Class.
     private String name;
     private int code;

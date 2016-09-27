@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-/**
- * Created by ox6185ys on 3/18/2016.
- */
 public class ITECCourseManager {
     public static void main(String args[]) {
         //ITECCourse Constructor for 3 courses.
