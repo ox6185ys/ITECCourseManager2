@@ -10,7 +10,7 @@ public class ITECCourse {//Set private elements for ITECCourse Class.
     {
         this.name = courseName;
         this.code = courseCode;
-        this.students = new ArrayList<String>();
+        this.students = new ArrayList<>();
         this.maxStudents = courseMaxStudents;
         this.roomNumber = roomNumber;
     }
@@ -21,6 +21,16 @@ public class ITECCourse {//Set private elements for ITECCourse Class.
         students.add(studentName);
     }
 
+    //check this removeStudent
+    void removeStudent(String studentName){
+        if (students.contains(studentName)){
+            students.remove("John");
+            System.out.println(studentName + " was delisted"+this.name);
+        }else {
+            System.out.println(studentName = " was not enrolled.");
+        }
+    }
+
     public int availableSeats()//Method for course availability in ITECCourseManager Class
     {
         return (maxStudents - students.size());
@@ -28,7 +38,7 @@ public class ITECCourse {//Set private elements for ITECCourse Class.
     public void writeCourseInfo() {//Display Course Details.
         System.out.println("Course Name: " + this.name);
         System.out.println("Course Code: " + this.code);
-        System.out.println("Students enrolled:");
+        System.out.println("Students enrolled:" + maxStudents  );
         for (String student : this.students) {
             System.out.println(student);
         }
